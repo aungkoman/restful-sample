@@ -1,0 +1,107 @@
+
+                {
+                        id:null,
+                        type:null, // soldier, relationship or civilian
+                        type_name:null,
+                        mc_type:null,
+                        mc_type_name:null,
+                        mc:null,
+                        rank:null,
+                        rank_name:null,
+                        nrc_no:null,
+                        name:null,
+                        unit:null,
+                        unit_name:null,
+                        address:null, // for relationship and civilian
+                        hospital:null,
+                        hospital_name:null,
+                        start_date:null,
+                        end_date:null,
+                        diease:null, // 
+                        diease_name:null,
+                        note:null
+                }, 
+                {
+                        id:2,
+                        type:1, // soldier, relationship or civilian
+                        type_name:"soldier",
+                        mc_type:1,
+                        mc_type_name:"Infantary",
+                        mc:12345,
+                        rank:1,
+                        rank_name:"capt",
+                        nrc_no:null,
+                        name:"Aung Aung",
+                        unit:"A09",
+                        unit_name:"LIR 73",
+                        address:null, // for relationship and civilian
+                        hospital:"A23",
+                        hospital_name:"MSA 3",
+                        start_date:"02-02-2020",
+                        end_date:"",
+                        diease:"AD789", // 
+                        diease_name:"Abdomenal",
+                        note:null
+                }, 
+                {
+                        id:3,
+                        type:1, // soldier, relationship or civilian
+                        type_name:"soldier",
+                        mc_type:1,
+                        mc_type_name:"Infantary",
+                        mc:145,
+                        rank:2,
+                        rank_name:"lt",
+                        nrc_no:null,
+                        name:"Aung Ko",
+                        unit:"A79",
+                        unit_name:"LIR 3",
+                        address:null, // for relationship and civilian
+                        hospital:"A24",
+                        hospital_name:"MSA 4",
+                        start_date:"03-02-2020",
+                        end_date:"",
+                        diease:"AD784", // 
+                        diease_name:"Head Ache",
+                        note:null
+                }, 
+                {
+                        id:4,
+                        type:1, // soldier, relationship or civilian
+                        type_name:"soldier",
+                        mc_type:1,
+                        mc_type_name:"Infantary",
+                        mc:1455,
+                        rank:3,
+                        rank_name:"Major",
+                        nrc_no:null,
+                        name:"Aung Win",
+                        unit:"A794",
+                        unit_name:"LIR 312",
+                        address:null, // for relationship and civilian
+                        hospital:"A264",
+                        hospital_name:"MSA 44",
+                        start_date:"04-02-2020",
+                        end_date:"04-02-2020",
+                        diease:"AD784", // 
+                        diease_name:"Depression",
+                        note:null
+                }
+
+
+                 elseif(type == 2 ) { %>
+			<td><%= nrc_no %></td>
+			<td><%= name %></td>
+			<td><%= address %></td>
+			<td><%= hospital_name %></td>
+			<td><%= disease_name %></td>
+			<td><%= relation_type_name %></td>
+			<td><%= note %></td>
+		<% } elseif(type == 3 ) { %>
+			<td><%= nrc_no %></td>
+			<td><%= name %></td>
+			<td><%= address %></td>
+			<td><%= hospital_name %></td>
+			<td><%= disease_name %></td>
+			<td><%= note %></td>
+		<% }  %>

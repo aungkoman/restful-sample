@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>DIrector of Medicine</title>
+	
+
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="css/all.css">
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Material Design Bootstrap -->
+	<link rel="stylesheet" href="css/mdb.min.css">
+	<!-- Our custom styles (optional) -->
+	<link rel="stylesheet" href="css/teamcs.css">
+	
+
+	<link rel="icon" href="images/app_icon.png" type="image/gif" sizes="16x16">
+
+	<style>
+		section{
+			margin: 50px;
+			padding: 50px;
+			max-width: 500px;
+			margin:auto;
+		}
+	</style>
+</head>
+
+<body class="fixed-sn white-skin">
+		<div class="container-fluid" class="main_div">
+			<!-- Section: Intro -->
+			<section id="intro_section">
+					
+				<!-- Material form login -->
+				<div class="card">
+
+				<h5 class="card-header info-color white-text text-center py-4">
+				<strong>ကကဆေး</strong>
+				</h5>
+
+				<!--Card content-->
+				<div class="card-body px-lg-5 pt-0">
+
+				<!-- Form -->
+				<form class="text-center" style="color: #757575;" action="#!">
+
+				<!-- Email -->
+				<div class="md-form">
+					<input type="email" id="materialLoginFormEmail" class="form-control">
+					<label for="materialLoginFormEmail">Username</label>
+				</div>
+
+				<!-- Password -->
+				<div class="md-form">
+					<input type="password" id="materialLoginFormPassword" class="form-control">
+					<label for="materialLoginFormPassword">Password</label>
+				</div>
+
+				<!-- <div class="d-flex justify-content-around">
+					<div>
+					<div class="form-check">
+					<input type="checkbox" class="form-check-input" id="materialLoginFormRemember">
+					<label class="form-check-label" for="materialLoginFormRemember">Remember me</label>
+					</div>
+					</div>
+					<div>
+					<a href="">Forgot password?</a>
+					</div>
+				</div> -->
+
+
+				<!-- Sign in button -->
+				
+					<button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit"><a href="index.html">Sign in</a></button>
+				
+
+				</form>
+				<!-- Form -->
+
+				</div>
+
+				</div>
+				<!-- Material form login -->
+				
+			</section>
+			<!-- Section: Intro -->
+		</div>
+
+
+
+	
+	<!-- SCRIPTS -->
+	<!-- JQuery -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="js/mdb.min.js"></script>
+
+	
+	<script src="js/modernizr.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/underscore.min.js"></script>
+	<script src="js/backbone.js"></script>
+
+
+	<!-- Initializations -->
+	<script>
+		
+		
+		    var container = document.querySelector('.custom-scrollbar');
+		    var ps = new PerfectScrollbar(container, {
+		      wheelSpeed: 2,
+		      wheelPropagation: true,
+		      minScrollbarLength: 20
+		    });
+		
+		    // Data Picker Initialization
+		    //$('.datepicker').pickadate();
+		
+		    // Material Select Initialization
+		    $(document).ready(function () {
+		      
+		      $('.mdb-select').material_select();
+		
+		      $('section').hide();
+		      $("#intro_section").show();
+		      // login section show
+		      // all hide
+		
+		      $('.ui_navigation').click(function(){
+		          var link = $(this).attr('href');
+		          link = link.substring(1);
+		          //alert(link);
+		          $('section').hide();
+		          $("#"+link).show();
+		      });
+		    });
+		
+		    // Tooltips Initialization
+		    $(function () {
+		      $('[data-toggle="tooltip"]').tooltip()
+		    })
+	</script>
+</body>
+
+</html>
